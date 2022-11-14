@@ -1,0 +1,90 @@
+@use 'src/styles/vars';
+
+.profile_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  
+
+  .profile_nav-title {
+    font-size: 1.5em;
+    color: vars.$greenColor;
+    margin-left: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  .profile_nav-img {
+    height: 5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .profile_nav-return{
+    background-color: vars.$greenColor;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.7em;
+    border-radius: 50%;
+    margin-left: 0.7em;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+}
+
+
+@media (min-width: 816px){
+  .profile_nav{
+    width: 70%;
+    margin-bottom: 1.5em;
+    .profile_nav-img{
+      visibility: hidden;
+    }
+
+    .profile_nav-title{
+      margin-top: 0.5em;
+      animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+  }
+}
+
+//Animation title
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//Animation for return
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+//Animation for logo
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

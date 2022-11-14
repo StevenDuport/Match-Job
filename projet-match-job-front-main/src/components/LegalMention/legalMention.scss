@@ -1,0 +1,72 @@
+@use 'src/styles/vars';
+
+.legalMention {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: 3em;
+  background-color: rgba(255, 255, 255, 0.541);
+  padding: 1em;
+  border-radius: 30px;
+  padding: 1em 3em 2em 3em;
+
+  .legalMention_title {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .legalMention_subtitle {
+    font-size: 1.5em;
+    color: vars.$darkGreenColor;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-decoration: underline;
+    
+  }
+
+  .legalMention_list {
+    margin-left: 1em;
+
+    .legalMention_list-item {
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .legalMention_content {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-size: 1.25em;
+    line-height: 1.3em;
+    text-align: justify;
+  }
+}
+
+@media all and (max-width: 816px)
+{
+  .legalMention {
+    margin-top: 8.5em;
+    width: 90%;
+    padding: 1em 1.5em 2em 1.5em;
+
+    .legalMention_title {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    .legalMention_list {
+      margin-left: 0em;
+    }
+  
+    .legalMention_content {
+      margin-left: 0em;
+    }
+  }
+
+
+}

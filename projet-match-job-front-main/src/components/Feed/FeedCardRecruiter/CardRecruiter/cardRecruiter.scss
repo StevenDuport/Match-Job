@@ -1,0 +1,181 @@
+@use 'src/styles/vars';
+
+.cardRecruiteur {
+  padding: 0.7em 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  span {
+    font-weight: bold;
+    color: vars.$darkGreenColor;
+  }
+
+  .cardRecruiteur_title {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: vars.$darkGreenColor;
+
+  }
+
+  .cardRecruiteur_name {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .cardRecruiteur_location {
+    margin-top: 1em;
+  }
+
+  .cardRecruiteur_content {
+    text-align: justify;
+    margin-top: 1em;
+    line-height: 1.3em;
+  }
+
+  .cardRecruiteur_list-filter {
+    margin-top: 1.5em;
+
+    .cardRecruiteur_list-filter-item {
+      margin-top: 0.5em;
+    }
+  }
+
+  .cardRecruiter-link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+
+    .cardRecruiter-link-item{
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      font-weight: bold;
+      color: vars.$darkGreenColor;
+      gap:10px;
+    }
+  }
+
+
+  .cardRecruiteur_techno-title {
+    margin-top: 1.5em;
+  }
+
+  .cardRecruiteur_list-techno {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+    .cardRecruiteur_list-techno-item {
+      font-size: 1.2em;
+      border: solid 1px rgb(170, 167, 167);
+      border-radius: 20px;
+      padding: 0.2em 0.5em;
+      background-color: rgb(231, 226, 226);
+      min-width: 3em;
+    }
+
+  }
+
+  .cardRecruiteur_button {
+    display: flex;
+    justify-content: space-around;
+
+    .cardRecruiteur_button-like {
+      font-size: 1em;
+      padding: 0.4em 0.5em;
+      border-radius: 5px;
+      font-weight: bold;
+      border: none;
+      background-color: vars.$greenColor;
+      color: vars.$whiteColor;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 vars.$darkGreenColor;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.8s;
+      padding-top: 0.4em;
+
+      &:hover {
+        box-shadow: inset 400px 50px 0 0 vars.$darkGreenColor;
+      }
+    }
+
+    .cardRecruiteur_button-dislike {
+      font-size: 1em;
+      padding: 2px;
+      border-radius: 5px;
+      border: none;
+      padding: 0.4em 0.5em;
+      background-color: #a30b0b;
+      color: vars.$whiteColor;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #6d0606;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.8s;
+      padding-top: 0.4em;
+
+      &:hover {
+        box-shadow: inset 400px 50px 0 0 #6d0606;
+      }
+    }
+  }
+  .cardRecruiteur_button {
+    display: flex;
+    justify-content: space-around;
+
+    .cardRecruiteur_button-like {
+      font-size: 1em;
+      padding: 0.4em 0.5em;
+      border-radius: 5px;
+      font-weight: bold;
+      border: none;
+      background-color: vars.$greenColor;
+      color: vars.$whiteColor;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 vars.$darkGreenColor;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.8s;
+      padding-top: 0.4em;
+
+      &:hover {
+        box-shadow: inset 400px 50px 0 0 vars.$darkGreenColor;
+      }
+    }
+
+    .cardRecruiteur_button-dislike {
+      font-size: 1em;
+      padding: 2px;
+      border-radius: 5px;
+      border: none;
+      padding: 0.4em 0.5em;
+      background-color: #a30b0b;
+      color: vars.$whiteColor;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #6d0606;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.8s;
+      padding-top: 0.4em;
+
+      &:hover {
+        box-shadow: inset 400px 50px 0 0 #6d0606;
+      }
+    }
+  }
+
+  .cardRecruiter_liked {
+    color: vars.$greenColor;
+    font-weight: bold;
+  }
+}
+

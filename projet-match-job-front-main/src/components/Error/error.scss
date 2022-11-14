@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+.error {
+  width: 93%;
+  height: 70vh;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 auto;
+  border-radius: 1em;
+  max-width: 400px;
+  max-height: 800px;
+  padding: 0.7em 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .error_type {
+    color: rgb(116, 4, 4);
+    font-size: 3em;
+  }
+
+  .error_content {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .error_link {
+    font-size: 1.1em;
+    font-style: italic;
+
+    &:hover {
+      color: vars.$greenColor;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+@use 'src/styles/vars';
+
+.feedBoardRecruiter--none{  
+  display: none;
+}
+
+.feedBoardRecruiter {
+  width: 93%;
+  height: 80%;
+  margin: 1em auto auto auto;
+  background-color: white;
+  border-radius: 1em;
+  max-width: 400px;
+  max-height: 800px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+
+
+  .feedBoardRecruiter_flex{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .feedBoardRecruiter_section-add{
+    font-size: 3em;
+    align-self: flex-start;
+    color: vars.$greenColor;
+    position: relative;
+
+    &:hover {
+      .feedBoardRecruiter_section-add--span{
+        font-size: 0.3em;
+        font-style: italic;
+        visibility: visible;
+        position: absolute;
+        left: -6em;
+        top: 1em;
+      }
+    }
+    
+    .feedBoardRecruiter_section-add--span{
+      visibility: hidden;
+    }
+  }
+
+  .spanItem {
+    font-weight: bold;
+    color: vars.$darkGreenColor;
+  }
+
+  .feedBoardRecruiter_list-techno{
+    font-size: 1em;
+  }
+
+  .feedBoardRecruiter-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: vars.$darkGreenColor;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 1em;
+  }
+
+  .feedBoardRecruiter_section{
+    height: 50%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 0.5em;
+    height: 30%;
+    overflow: scroll;
+    overflow-x: hidden;
+      
+    animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+
+    &:first-child {
+      display: none;
+      height: 20%;
+      padding-top: 4em;
+    }
+
+  }
+
+  .feedBoardRecruiter_section:not(:first-child){
+    -webkit-box-shadow: 0px -11px 13px -4px rgba(0,0,0,0.46); 
+    box-shadow: 0px -11px 13px -4px rgba(0,0,0,0.46);
+  }
+
+  .feedBoardRecruiter_list{
+    display:flex; 
+    flex-direction: column;
+
+    .feedBoardRecruiter_list-item {
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+
+      &:hover {
+        color: vars.$greenColor;
+      }
+    }
+  }
+}
+
+
+@keyframes swing-in-bottom-fwd {
+  0% {
+    transform: rotateX(100deg);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 816px){
+
+  div.feedBoardRecruiter--none {
+    background-color: white;
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0em;
+    left: auto;
+    margin: 0;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: 25%;
+    max-width: 25%;
+    height: 100%;
+    max-height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .feedBoardRecruiter_flex{
+      display:flex;
+      justify-content: space-between;
+    }
+  
+    .feedBoardRecruiter_section-add{
+      font-size: 3em;
+      align-self: flex-start;
+      color: vars.$greenColor;
+      position: relative;
+  
+      &:hover {
+        .feedBoardRecruiter_section-add--span{
+          font-size: 0.3em;
+          font-style: italic;
+          display: flex;
+          position: absolute;
+          left: -5.5em;
+          top: 1em;
+        }
+      }
+
+      .feedBoardRecruiter_section-add--span{
+        display: none;
+      }
+    }
+
+    .spanItem {
+      font-weight: bold;
+      color: vars.$darkGreenColor;
+    }
+
+    .feedBoardRecruiter_list-techno{
+      font-size: 0.8em;
+      margin-top: 0.3em;
+    }
+
+    .feedBoardRecruiter-title {
+      font-size: 1.5em;
+      color: vars.$darkGreenColor;
+      font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      margin-bottom: 1em;
+    }
+
+    .feedBoardRecruiter_section:not(:first-child){
+      -webkit-box-shadow: 0px -11px 13px -4px rgba(0,0,0,0.46); 
+      box-shadow: 0px -11px 13px -4px rgba(0,0,0,0.46);
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+    }
+
+    .feedBoardRecruiter_section {
+      height: 25%;
+      padding-left: 1em;
+      padding-top: 1em;
+      overflow: scroll;
+      overflow-x: hidden;
+      
+      
+      &:first-child {
+        display: block;
+        height: 20%;
+        padding-top: 4em;
+        overflow: hidden;
+        overflow-x: hidden;
+      }
+    }
+
+    .feedBoardRecruiter_list{
+      display:flex; 
+      flex-direction: column;
+  
+      .feedBoardRecruiter_list-item {
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+
+        &:hover {
+          color: vars.$greenColor;
+        }
+      }
+    }
+
+    .feedBoardRecruiter_section-name {
+      font-size: 2em;
+      
+
+      &:hover {
+        color: vars.$greenColor;
+      }
+    }
+  }
+
+}

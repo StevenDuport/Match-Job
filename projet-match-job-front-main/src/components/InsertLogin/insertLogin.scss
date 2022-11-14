@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+
+.insertLogin {
+  width: 15em;
+  height: 25em;
+  background-color: rgba(255, 255, 255, 0.541);
+  margin: 5em auto;
+  border-radius: 1em;
+  padding: 1em;
+  color: vars.$darkGreenColor;
+  text-align: center;
+
+
+  .insertLogin_content {
+
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+
+  .insertLogin_link {
+    background-color: white;
+    color: vars.$darkGreenColor;
+    font-size: 2em;
+    padding: 0.1em 0.8em;
+    border-radius: 0.8em;
+    border: solid 1px vars.$darkGreenColor;
+
+    &:hover {
+      background-color: vars.$greenColor;
+      color: vars.$whiteColor;
+    }
+  }
+
+
+}
+
+

@@ -1,0 +1,41 @@
+@use 'src/styles/vars';
+
+.profile_navEdit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  
+
+  .profile_navEdit-title {
+    font-size: 2em;
+    color: vars.$greenColor;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  .profile_navEdit-img {
+    height: 5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  .profile_navEdit-return{
+    margin-left: 0.5em;
+  }
+}
+
+
+@media (min-width: 816px){
+  .profile_navEdit {
+    padding-top: 0.3em;
+    margin-bottom: 0.5em;
+
+    .profile_navEdit-title {
+      font-size: 3em;
+    }
+    .profile_navEdit-img {
+      margin-top: 0.3em;
+    }
+
+  }
+}

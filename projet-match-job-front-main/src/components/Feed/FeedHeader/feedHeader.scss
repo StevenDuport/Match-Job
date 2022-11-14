@@ -1,0 +1,44 @@
+@use 'src/styles/vars';
+
+.feed_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  
+
+  .feed_header-title {
+    font-size: 1.5em;
+    color: vars.$greenColor;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  .feed_header-logo {
+    height: 100%;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .feed_header-imgProfile {
+    clip-path: circle(35.4% at 50% 50%);
+    height: 80px;
+    width: 75px;
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+@media (min-width: 816px){
+  .feed_header {
+  
+    .feed_header-title {
+      margin-right: 20%;
+      font-size: 3em;
+    }
+    
+  }
+}

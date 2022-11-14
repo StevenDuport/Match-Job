@@ -1,0 +1,43 @@
+@use 'src/styles/vars';
+
+.feedNav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+
+  button{
+    svg{
+      position: absolute;
+      left: 11px;
+      top: 11px;
+    }
+  }
+
+  svg{
+    position: absolute;
+    left: 11px;
+    top: 11px;
+  }
+
+  .feedNav_button {
+    background-color: #026E47;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    border: none;
+    margin: 0 1em 0 1em;
+    color: white;
+    font-size: 3.5em;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+  }
+}
+
+
+@media (min-width: 816px){
+  .feedNav {
+    display: none;
+  }
+  
+}

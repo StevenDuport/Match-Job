@@ -1,0 +1,38 @@
+@use 'src/styles/vars';
+
+.profileRecruiter_navEdit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  
+
+  .profileRecruiter_navEdit-title {
+    font-size: 2em;
+    color: vars.$greenColor;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  .profileRecruiter_navEdit-img {
+    height: 5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  .profileRecruiter_navEdit-return{
+    margin-left: 0.5em;
+  }
+}
+
+
+@media (min-width: 816px){
+  .profileRecruiter_navEdit {
+    padding-top: 0.3em;
+
+
+    .profileRecruiter_navEdit-title {
+      font-size: 3em;
+      
+    }
+  }
+}

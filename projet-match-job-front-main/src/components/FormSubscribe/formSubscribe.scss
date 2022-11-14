@@ -1,0 +1,143 @@
+@use 'src/styles/vars';
+
+.formSubscribe {
+  width: 25em;
+  height: 35em;
+  border-radius: 1em;
+  margin: auto;
+  margin-top: 2em;
+  background-color: rgba(255, 255, 255, 0.541);
+  display: flex;
+  flex-direction: column;
+
+  .formSubscribe_linkConnexion {
+    margin: auto;
+    font-style: italic;
+
+    &:hover {
+      color: vars.$greenColor;
+    }
+  }
+
+
+  .formSubscribe_close{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    height: 3em;
+
+    .formSubscribe_close-Button{
+      font-size: 1em;
+      border-radius: 50%;
+      height: 1.7em;
+      width: 1.7em;
+      background: none;
+      border: 1.5px solid black;
+      padding: 0.3em;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      
+  
+      &:hover {
+        color: vars.$greenColor;
+        border: 1px solid vars.$greenColor;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+      }
+    }
+  }
+  
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  
+  .subscribeForm_label {
+    width: 15em;
+    margin: auto;
+    margin-top: 1em;
+  }
+
+  .subscribeForm_input {
+    width: 15em;
+    margin: auto;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+      
+    &:focus {
+      border: solid 2px vars.$greenColor;
+    }
+    
+
+  }
+
+  .subscribeForm_select {
+    width: 15em;
+    margin: auto;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+
+    &:focus {
+      border: solid 2px vars.$greenColor;
+    }
+  }
+
+  .subscribeForm_submit {
+
+    width: 10em;
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 2em;
+    height: 2em;
+    background-color: vars.$greenColor;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 vars.$darkGreenColor;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.8s;
+
+    &:hover {
+      box-shadow: inset 400px 50px 0 0 vars.$darkGreenColor;
+    }
+  }
+
+  
+}
+
+@media all and (max-width: 816px) {
+  .formSubscribe {
+    margin-top: 9.5em;
+    width: 95%;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
